@@ -55,7 +55,7 @@ IteratorField: subclass of Field, used for a list or any other iterator.
 
     from api.validations import Validation
 
-    print(Validation.validate("vikas", int, "user")) # ("Field 'user' is in an invalid format.", True)
+    print(Validation.validate("123", int, "user")) # (123, True)
 
 2. Example: Custom validation
 
@@ -72,8 +72,8 @@ IteratorField: subclass of Field, used for a list or any other iterator.
     print(Validation.validate("cpu", lambda x: _check_in_list(x, device), "device"))
     # ('cpu', False)
 
-    print(Validation.validate("device", lambda x: _check_in_list(x, device), "user"))
-    # ("Field 'user' is in an invalid format.", True)
+    print(Validation.validate("amd", lambda x: _check_in_list(x, device), "device"))
+    # ("Field 'device' is in an invalid format.", True)
 
 3. Example: Validation for iterables using Field
 
