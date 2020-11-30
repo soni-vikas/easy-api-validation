@@ -3,8 +3,6 @@
 """The setup script."""
 
 from setuptools import setup, find_packages, Command
-from setuptools.command.build_py import build_py
-from setuptools.command.develop import develop
 
 with open("README.rst") as readme_file:
     readme = readme_file.read()
@@ -42,14 +40,14 @@ setup(
     long_description=readme + "\n\n" + history,
     include_package_data=True,
     keywords="api",
-    name="Validations",
+    name="ApiValidations",
     packages=packages,
     namespace_packages=namespaces,
     setup_requires=setup_requirements,
     test_suite="tests",
     tests_require=test_requirements,
-    url="https://github.com/soni-vikas/validation",
-    version="0.1.0",
+    url="https://github.com/soni-vikas/easy-api-validation",
+    version="1.0.0",
     zip_safe=False,
     package_dir={"": "."},
     cmdclass={},

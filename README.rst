@@ -1,7 +1,6 @@
-
-==============
+===================
 Easy Api Validation
-==============
+===================
 
 This is a python-package that makes data-validation easier for python developers.
 It provides interfaces like Field, IterableField, Validaion etc for validation.
@@ -32,10 +31,12 @@ Mac/Linux
 
 .. code-block:: sh
 
-    $ pip install virtualenv
-    $ virtualenv venv -p python3
-    $ . venv/bin/activate
-    $ source venv/bin/activate
+    $ pip install ApiValidations==1.0.0
+
+or
+
+.. code-block:: sh
+
     $ pip install git+https://github.com/soni-vikas/api-validaion.git#egg=api-validation'
 
 Example Usage
@@ -150,8 +151,8 @@ for more examples, see tests cases available in tests/
 Development
 -----------
 
-Getting Started
-~~~~~~~~~~~~~~~
+Installation
+~~~~~~~~~~~~
 Assuming that you have Python and ``virtualenv`` installed, set up your
 environment and install the required dependencies defined above:
 
